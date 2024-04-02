@@ -26,26 +26,29 @@
             // |  TAB  |  A  |  R  |  S   |  T   |  G   |                                          |  M   |  N    |  E    |  I   |   O   |   '  |
             // | SHIFT |  X  |  C  |  D   |  V   |  Z   | L SHIFT | L SHIFT |  | LAYER 1 | L SHIFT |  K   |  H    |  ,    |  .   |   /   | CTRL |
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+
             bindings = <
-            &kp ESC   &kp Q &kp W &kp F &kp P &kp B                                                  &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSLH
-            &kp TAB   &kp A &kp R &kp S &kp T &kp G                                                  &kp M &kp N  &kp E     &kp I   &kp O &kp SQT
-            &kp LSHFT &kp X &kp C &kp D &kp V &kp Z &kp LSHFT &kp LSHFT            &mo 1   &kp LSHFT &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                  &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &kp SPACE &kp TAB &kp BSPC &kp RALT
+&kp ESC    &kp Q  &kp W  &kp F     &kp P      &kp B                                                     &kp J          &kp L    &kp U      &kp Y    &kp SEMI  &kp BSLH
+&kp TAB    &kp A  &kp R  &kp S     &kp T      &kp G                                                     &kp M          &kp N    &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp X  &kp C  &kp D     &kp V      &kp Z           &kp LSHFT  &kp LSHFT  &mo 1    &kp LSHFT  &kp K          &kp H    &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                         &kp LGUI  &kp LCTRL  &kp LEFT_SHIFT  &mo 1      &kp ESC    &kp RET  &kp SPACE  &kp BACKSPACE  &kp TAB  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
+
         function_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+
             bindings = <
-            &trans &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2              &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans                    &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
-                                 &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+&trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2                                     &trans  &trans                &trans                 &trans  &trans  &trans
+&trans  &trans  &trans      &bt BT_SEL 3  &kp LEFT_BRACE  &kp RIGHT_BRACE                                  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans
+&trans  &trans  &trans      &trans        &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans                &trans                 &trans  &trans  &trans
+                            &trans        &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
