@@ -54,10 +54,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&kp F1  &kp F2     &kp F3         &kp F4          &kp F5           &kp F6                                       &kp F7  &kp F8                &kp F9                 &kp F10    &kp F11    &kp F12
-&trans  &kp GRAVE  &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AT_SIGN                                  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans
-&trans  &trans     &trans         &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans     &trans
-                                  &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans  &trans                &trans
+&kp F1  &kp F2         &kp F3    &kp F4          &kp F5           &kp F6                                       &kp F7     &kp F8                &kp F9                 &kp F10    &kp F11    &kp F12
+&trans  &kp BACKSLASH  &kp HASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AT_SIGN                                  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &trans
+&trans  &trans         &trans    &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans     &trans
+                                 &trans          &trans           &trans       &trans  &trans  &trans  &trans  &trans     &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -69,6 +69,15 @@
 &trans  &trans  &trans      &trans        &trans        &trans                                        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans     &trans  &trans
                             &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &tog 0          &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
